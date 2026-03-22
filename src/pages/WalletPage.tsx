@@ -139,7 +139,7 @@ const WalletPage: React.FC = () => {
           orderId: walletOrderId,
           playerName: user?.email?.split('@')[0] || 'Customer',
           gameName: 'Wallet Top-up',
-          email: user?.email || 'customer@xavier.com'
+          email: user?.email || 'customer@xingtzyyy.com'
         }
       });
 
