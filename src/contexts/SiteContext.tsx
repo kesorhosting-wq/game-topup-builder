@@ -172,7 +172,7 @@ interface SiteContextType {
 }
 
 const defaultSettings: SiteSettings = {
-  siteName: 'Xavier Topup',
+  siteName: 'XingTzyyy Topup',
   logoUrl: '',
   logoSize: 64,
   logoMobilePosition: 50,
@@ -187,7 +187,7 @@ const defaultSettings: SiteSettings = {
   secondaryColor: '#9b7bb8',
   // Browser settings
   siteIcon: '',
-  browserTitle: 'Xavier Topup - Game Topup Cambodia',
+  browserTitle: 'XingTzyyy Topup - Game Topup Cambodia',
   // Home Edit defaults
   backgroundImage: '',
   headerImage: '',

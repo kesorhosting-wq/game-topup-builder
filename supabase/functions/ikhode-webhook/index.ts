@@ -181,7 +181,7 @@ serve(async (req) => {
       .from("topup_orders")
       .update({
         status: "paid",
-        payment_method: "Xavier KHQR",
+        payment_method: "XingTzyyy KHQR",
         status_message: `Payment confirmed. Transaction: ${transactionId}. Auto-fulfillment queued via trigger.`,
         updated_at: new Date().toISOString(),
       })
