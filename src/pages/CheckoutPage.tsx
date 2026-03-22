@@ -288,7 +288,7 @@ const CheckoutPage = () => {
                   description={`${items.length} កញ្ចប់`}
                   onCancel={handleCancelPayment}
                   onComplete={handlePaymentComplete}
-                  paymentMethod="Xavier KHQR"
+                  paymentMethod="XingTzyyy KHQR"
                   wsUrl={generatedQR.wsUrl}
                 />
               ) : !isIkhodeConfigured ? (
