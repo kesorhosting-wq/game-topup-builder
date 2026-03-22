@@ -172,7 +172,7 @@ interface SiteContextType {
 }
 
 const defaultSettings: SiteSettings = {
-  siteName: 'Xavier Topup',
+  siteName: 'XingTzyyy Topup',
   logoUrl: '',
   logoSize: 64,
   logoMobilePosition: 50,
