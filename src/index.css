@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700;900&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Khmer:wght@400;500;600;700&family=Noto+Sans+Symbols+2&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 40% 7%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 35% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 35% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 40% 7%;
+
+    --secondary: 220 30% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 25% 15%;
+    --muted-foreground: 210 15% 55%;
+
+    --accent: 195 90% 45%;
+    --accent-foreground: 220 40% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 195 50% 30%;
+    --input: 220 30% 18%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gold: 195 100% 50%;
+    --gold-light: 195 80% 65%;
+    --gold-dark: 200 90% 35%;
+    --gold-glow: 195 100% 55%;
+    --cream: 220 40% 7%;
+    --cream-dark: 220 35% 12%;
+    --burgundy: 350 50% 30%;
+    --burgundy-light: 350 45% 45%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(195 100% 55%), hsl(200 90% 40%));
+    --gradient-cream: linear-gradient(180deg, hsl(220 40% 9%), hsl(220 40% 7%));
+    --gradient-hero: linear-gradient(180deg, hsl(220 35% 15%) 0%, hsl(220 40% 7%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 30% 16%), hsl(220 35% 10%));
+
+    /* Shadows */
+    --shadow-gold: 0 4px 20px -4px hsl(195 100% 50% / 0.3);
+    --shadow-elegant: 0 10px 40px -10px hsl(220 40% 5% / 0.5);
+
+    --sidebar-background: 220 35% 10%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 220 40% 7%;
+    --sidebar-accent: 220 30% 18%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 195 50% 30%;
+    --sidebar-ring: 195 100% 50%;
+  }
+
+  .dark {
+    --background: 220 40% 7%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 35% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 35% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 220 40% 7%;
+
+    --secondary: 220 30% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 220 25% 15%;
+    --muted-foreground: 210 15% 55%;
+
+    --accent: 195 90% 45%;
+    --accent-foreground: 220 40% 7%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 195 50% 30%;
+    --input: 220 30% 18%;
+    --ring: 195 100% 50%;
+
+    --gold: 195 100% 55%;
+    --gold-light: 195 80% 70%;
+    --gold-dark: 200 90% 40%;
+    --cream: 220 40% 7%;
+    --cream-dark: 220 35% 12%;
+    --burgundy: 350 50% 35%;
+
+    --gradient-gold: linear-gradient(135deg, hsl(195 100% 60%), hsl(200 90% 45%));
+    --gradient-cream: linear-gradient(180deg, hsl(220 35% 12%), hsl(220 40% 7%));
+    --gradient-hero: linear-gradient(180deg, hsl(220 30% 18%) 0%, hsl(220 40% 7%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 18%), hsl(220 35% 12%));
+
+    --sidebar-background: 220 35% 10%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 195 100% 55%;
+    --sidebar-primary-foreground: 220 40% 7%;
+    --sidebar-accent: 220 30% 18%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 195 50% 30%;
+    --sidebar-ring: 195 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: var(--gradient-cream);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', 'Noto Sans Khmer', sans-serif;
+  }
+
+  .font-khmer {
+    font-family: 'Battambang', cursive;
+  }
+}
+
+@layer utilities {
+  .gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gold-border {
+    border: 2px solid hsl(var(--gold));
+    box-shadow: var(--shadow-gold);
+  }
+
+  .khmer-frame {
+    position: relative;
+    border: 3px solid hsl(var(--gold));
+    background: var(--gradient-card);
+    box-shadow: 
+      var(--shadow-gold),
+      inset 0 1px 0 hsl(var(--gold-light) / 0.5);
+  }
+
+  .khmer-frame::before,
+  .khmer-frame::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid hsl(var(--gold));
+  }
+
+  .khmer-frame::before {
+    top: -5px;
+    left: -5px;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .khmer-frame::after {
+    bottom: -5px;
+    right: -5px;
+    border-left: none;
+    border-top: none;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.35;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.02);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 1.8s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-pulse-glow {
+      animation: none;
+    }
+  }
+
+  .ornament-corner {
+    background: linear-gradient(45deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 50%, hsl(var(--gold)) 100%);
+  }
+}
