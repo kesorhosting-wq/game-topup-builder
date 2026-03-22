@@ -147,7 +147,7 @@ const KHQRPaymentCard = ({
 
         {/* Amount Section */}
         <div className="px-6 pt-5 pb-3 text-center bg-gradient-to-b from-gray-50 to-white">
-          <p className="text-gray-500 text-sm mb-1">{description || "Xavier TopUp"}</p>
+          <p className="text-gray-500 text-sm mb-1">{description || "XingTzyyy TopUp"}</p>
           <div className="flex items-baseline justify-center gap-1">
             <span className="text-4xl font-black text-gray-900">
               {currency === "KHR" ? amount.toLocaleString() : amount.toFixed(2)}

@@ -295,7 +295,7 @@ const CheckoutPage = () => {
                 <Card>
                   <CardContent className="py-8 text-center">
                     <CreditCard className="w-12 h-12 mx-auto text-muted-foreground mb-4" />
-                    <p className="text-muted-foreground mb-4">Xavier KHQR មិនទាន់បានកំណត់។ សូមទាក់ទងអ្នកគ្រប់គ្រង។</p>
+                    <p className="text-muted-foreground mb-4">XingTzyyy KHQR មិនទាន់បានកំណត់។ សូមទាក់ទងអ្នកគ្រប់គ្រង។</p>
                   </CardContent>
                 </Card>
               ) : (

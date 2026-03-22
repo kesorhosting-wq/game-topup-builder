@@ -155,7 +155,7 @@ const ThemePreviewModal: React.FC<ThemePreviewModalProps> = ({
             className="p-6 text-center text-white"
             style={{ backgroundColor: colors.primaryColor }}
           >
-            <p className="text-sm opacity-80">© 2024 XavierTopup. All rights reserved.</p>
+            <p className="text-sm opacity-80">© 2024 XingTzyyyTopup. All rights reserved.</p>
             <div className="flex justify-center gap-4 mt-2">
               <span className="text-xs opacity-60">Terms</span>
               <span className="text-xs opacity-60">Privacy</span>

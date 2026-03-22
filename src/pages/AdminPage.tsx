@@ -543,7 +543,7 @@ const AdminPage: React.FC = () => {
                         value={settings.browserTitle}
                         onChange={(e) => handleUpdateSettings('browserTitle', e.target.value)}
                         className="border-gold/50"
-                        placeholder="Xavier Topup - Game Topup Cambodia"
+                        placeholder="XingTzyyy Topup - Game Topup Cambodia"
                       />
                       <p className="text-xs text-muted-foreground mt-1">Text shown in browser tab</p>
                     </div>
