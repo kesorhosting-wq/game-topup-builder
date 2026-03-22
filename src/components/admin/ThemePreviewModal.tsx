@@ -48,7 +48,7 @@ const ThemePreviewModal: React.FC<ThemePreviewModalProps> = ({
           >
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-white/20" />
-              <span className="text-white font-bold text-lg">XavierTopup</span>
+              <span className="text-white font-bold text-lg">XingTzyyyTopup</span>
             </div>
             <div className="flex gap-2">
               <div className="px-4 py-2 rounded-lg bg-white/10 text-white text-sm">Home</div>
